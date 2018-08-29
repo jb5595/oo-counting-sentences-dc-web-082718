@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
+<<<<<<< HEAD
     delimiters = ['.', '!', "?"]
     array = self.split(Regexp.union(delimiters))
     array.delete("")
@@ -22,6 +23,14 @@ class String
 
 
 
+=======
+    
+    self.split("").each.with_index do |char, index|
+      if 
+    end
+    array = self.split("."||"?"||"!")
+  
+>>>>>>> 621288de35fe374b6889a109dc0c2ea7997f7d77
     return array.length
 
   end
